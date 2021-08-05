@@ -229,7 +229,7 @@ We will need a client from which you can connect to the mongo instances and test
 
 ### Install mongosh client
 
-Per documentation [here]()
+Per documentation [here](https://www.mongodb.com/try/download/shell)
 
 Example for Linux
 
