@@ -20,6 +20,8 @@ This technology also allows backups to be taken on NFS or S3. This documentation
 apt-get install -y open-iscsi
 ```
 
+* If using GKE cluster use Ubuntu images for nodes and you will need cluster admin access to the user as explained [here](https://longhorn.io/docs/1.1.2/advanced-resources/os-distro-specific/csi-on-gke/)
+
 ## Install Longhorn CSI
 
 We will install longhorn on both the source and target clusters.
@@ -272,7 +274,7 @@ wordpress-mysql   ClusterIP      None          <none>            3306/TCP       
 
 * Switch the kubernetes context to the the target cluster
 
-* Configure the `Setting` -> `General`, Backup Target and Backup Credential as discussed here (### Configure backup on LongHorn UI)
+* Configure the `Setting` -> `General`, Backup Target and Backup Credential as discussed [here](#configure-backup-on-longhorn-ui)
 
 * In the `Backup` menu, you should see the two backups that you can select and click on the `Create Disaster Recovery Volume` button
 
