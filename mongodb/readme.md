@@ -492,7 +492,7 @@ kubectl delete -f pvc2.yaml
 Cleanup `cluster2`
 
 ```
-kubectx cluster1
+kubectx cluster2
 kubens mongo
 kubectl delete -f mongo3-service.yaml
 kubectl delete -f mongo3-deployment.yaml
